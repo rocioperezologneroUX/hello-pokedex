@@ -1,0 +1,17 @@
+:root {
+    /* Colors */
+    --identity-primary: #dc0a2d;
+    --neutral-white: #ffffff;
+
+    /* Fonts */
+    /* Header Font */
+    --header-headline-font-family: 'Poppins-Bold', sans-serif;
+    --header-headline-font-size: 24px;
+    --header-headline-line-height: 32px;
+    --header-headline-font-weight: 700;
+    --header-headline-font-style: normal;
+
+       /* Shadows */
+    --drop-shadow-card: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
+}
+         
