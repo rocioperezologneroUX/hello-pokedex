@@ -1,0 +1,35 @@
+:root {
+    /* Colors */
+    --identity-primary: #dc0a2d;
+    --neutral-white: #ffffff;
+    --neutral-gray-100: #efefef;
+    --neutral-gray-600: #666666;
+    --neutral-gray-900: #1d1d1d;
+
+    /* Fonts */
+    /* Header Font */
+
+    --header-title-font-family: 'Poppins-Bold', sans-serif;
+    --header-title-font-size:   1.5rem;
+    --header-title-line-height: 2rem;
+    --header-title-font-weight: 700;
+    --header-title-font-style: normal;
+
+    --card-serie-number-font-family: 'Poppins-regular', sans-serif;
+    --card-serie-number-font-size:   0.625rem;
+    --card-serie-number-line-height: 0.875rem;
+    --card-serie-number-font-weight: 500;
+    --card-serie-number-font-style: normal;
+
+    --card-pokemon-name-font-family: 'Poppins-regular', sans-serif;
+    --card-pokemon-name-font-size:   0.750rem;
+    --card-pokemon-name-line-height: 1rem;
+    --card-pokemon-name-font-weight: 500;
+    --card-pokemon-name-font-style: normal;
+
+
+       /* Shadows */
+    --drop-shadow-card: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    --inner-shadow-header-search: inset 0px 1px 3px 1px rgba(0, 0, 0, 0.25);
+}
+         
