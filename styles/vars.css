@@ -31,5 +31,14 @@
        /* Shadows */
     --drop-shadow-card: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
     --inner-shadow-header-search: inset 0px 1px 3px 1px rgba(0, 0, 0, 0.25);
+
+
+        /* Spacing */
+    --po-outter-spacing-xs: 8px;
+    --po-outter-spacing-lg: 16px;
+
+        /* Border-radius */
+    --po-border-radius-sm: 8px;
 }
-         
+
+    

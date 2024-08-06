@@ -83,12 +83,12 @@
     overflow: hidden;
 }
 
-.filters__input {
+#filters__input {
     border: 0px;
-    color: #666666;
+    color: #999999;
     text-align: left;
     font-family: 'Poppins-Regular', sans-serif;
-    font-size: 10px;
+    font-size: 14px;
     line-height: 16px;
     font-weight: 400;
     position: relative;
@@ -124,78 +124,78 @@
         overflow: visible;
     }
 
-    .grid__container__card__pokemon {
-        display: grid;
-        grid-template-columns: repeat(9, 1fr);
-        grid-auto-rows: 1fr;
-        gap: 10px; 
-        margin: 16px;
+    .main__container {
+        background-color: var(--neutral-white);
+        border-radius: var(--po-border-radius-sm);
+        padding: var(--po-outter-spacing-lg);
+        width: 100%;
+        flex-grow: 1;
     }
 
-    .grid__card__pokemon {
-        background: var(--neutral-white, #ffffff);
-        border-radius: 8px;
+    .pokemon__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(125px,1fr));
+        gap: var(--po-outter-spacing-xs);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pokemon__item {
+        position: relative;
+        max-width: 125px;
+        width: 100%;
+    }
+
+    .pokemon__item::after {
+        border-radius: var(--po-border-radius-sm);
+        width: 100%;
+        height: 40%;
+        background-color: var(--neutral-gray-100);
+        position: absolute;
+        content: "";
+        bottom: 0;
+    }
+
+    .pokemon__card {
+        padding: var(--po-border-radius-sm);
+        box-shadow: var(--drop-shadow-card);
+        border-radius: var(--po-border-radius-sm);
+        gap: var(--po-outter-spacing-xs);
         display: flex;
         flex-direction: column;
-        flex-shrink: 0;
-        width: 100%;
-        height: 100%;
-        position: relative;
-        box-shadow: var(--drop-shadow-card);
-        overflow: hidden;
-        aspect-ratio: 1 / 1; 
-        }
-
-    .card__pokemon_image { 
-        position: relative;
-        width: auto;
-        height: auto;
         align-items: center;
-        justify-content: center;
-        object-fit: contain;
-        z-index: 9999;
-        aspect-ratio: 4/3;
+        aspect-ratio: 1/1;
+        z-index: 1;
+        position: inherit;
     }
 
-    .card__serie__number {
+    .pokemon__id  {
         color: var(--neutral-gray-600);
-        text-align: right; /* Alinea el texto a la derecha */
+        width: 100%;
+        text-align: right;
         font-family: var(--card-serie-number-font-family);
         font-size: var(--card-serie-number-font-size);
         line-height: var(--card-serie-number-line-height);
         font-weight: var(--card-serie-number-font-weight);
         position: relative;
-        align-items: center;
+        align-items: end;
         justify-content: flex-end; 
         padding: 4px 8px 0px 8px;
-      
     }
 
-    .card__pokemon__name {
-        background-color: var(--neutral-gray-100);
+    .pokemon__name {
         color: var(--neutal-gray-900);
         text-align: center;
         font-family: var(--card-pokemon-name-font-family);
         font-size: var(--card-pokemon-name-font-size);
         line-height: var(--card-pokemon-name-line-height);
         font-weight: var(--card-pokemon-name-font-weight);
-        position: absolute; /* Cambiado a absolute */
-        bottom: 0; /* Posicionado al fondo del contenedor padre */
+        position: relative; 
+        bottom: 0; 
         width: 100%;
-        padding: 24px 8px 4px 8px;
+        padding: 4px 8px 4px 8px;
         flex: 1;
         display: flex;
         align-items: center;
         justify-content: center;
-        }
-
-        @media (max-width: 1500px) {
-            .grid__container__card__pokemon {
-                grid-template-columns: repeat(5, 1fr); }
-        }
-        
-        /* Media query para pantallas pequeñas */
-        @media (max-width: 800px) {
-            .grid__container__card__pokemon {
-                grid-template-columns: repeat(3, 1fr); }
-            }
+    }
